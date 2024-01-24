@@ -4,9 +4,9 @@ public class ShapeFactory {
             return null;
         }
         if(shapeType.equalsIgnoreCase("RECTANGLE")){
-            return new Rectangle();
+            return  Rectangle.getInstance();
         } else if(shapeType.equalsIgnoreCase("SQUARE")){
-            return new Square();
+            return  Square.getInstance();
         }
         return null;
     }
